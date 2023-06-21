@@ -6,12 +6,19 @@
 # If the Integer is a multiple of both 3 and 5, print "FizzBuzz". 
 # If the Integer is not a multiple of either, print the Integer itself.
 
-integer = 6
 
-if integer % 3 && integer % 5
+#if integer % 3 && integer % 5
+    puts "Fizzbuzz"
+
+
+# integer = 7
+
+if (integer%3) == 0 && (integer%5) == 0
     puts "FizzBuzz"
-elsif integer % 3
+elsif (integer%3) == 0
     puts "Fizz"
-else integer % 5
+elsif (integer%5) == 0
     puts "Buzz"
+else
+    puts integer
 end
